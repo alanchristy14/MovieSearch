@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Movie Search & Filter</title>
+  <script scr="script.jc"></script>
+</head>
+<body>
+  <h1>Movie Search & Filter</h1>
+
+  <!-- Search and Filter Form -->
+  <div class="filter-container">
+    <input type="text" id="searchInput" placeholder="Search by name or actor" />
+    <select id="genreFilter">
+      <option value="">All Genres</option>
+      <option value="Action">Action</option>
+      <option value="Comedy">Comedy</option>
+      <option value="Drama">Drama</option>
+      <option value="Horror">Horror</option>
+    </select>
+    <input type="number" id="yearFilter" placeholder="Year" min="1900" max="2025" />
+  </div>
+
+  <!-- Movies List with Skeleton Loader -->
+  <div id="movieList">
+    <div class="skeleton-card">Loading...</div>
+    <div class="skeleton-card">Loading...</div>
+    <div class="skeleton-card">Loading...</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
